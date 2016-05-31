@@ -39,3 +39,13 @@ cacheSolve <- function(x, ...) {
   x$setInvMatrix(m)
   m
 }
+
+##Testing my functions
+
+my_matrx <- matrix((1:4),2,2)
+
+cachdMatrix <- makeCacheMatrix(my_matrx)
+
+cachdMatrix$get()
+
+cacheSolve(cachdMatrix)
